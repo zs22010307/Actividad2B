@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+  text-align: center;
+    font: bold 30px verdana, sans-serif
+}
+
+h3{
+  text-align: center;
+    font: bold 24px verdana, sans-serif;
+}
+
+h4{
+  text-align: center;
+  font: bold 20px verdana, sans-serif;
+}
+
+p{
+  text-align: justify;
+    font: 18px verdana, sans-serif;
+}
+
+ol{
+  text-align: justify;
+  font: 16px verdana, sans-serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D90001;
+  font: 22px verdana, sans-serif;
+  border: solid 1px #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font: verdana, sans-serif;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+  /* Style the header */
+  .header {
+    background-color: #D90001;
+    padding: 70px;
+    text-align: center;
+    font-size: 60px;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 18%;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 80%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
